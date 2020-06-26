@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEditorInternal;
 
 public class NumberWizardConsole : MonoBehaviour
 {
@@ -21,7 +20,7 @@ public class NumberWizardConsole : MonoBehaviour
     {
         if(guess == min)
         {
-            guessText.text = ("Error!");
+            return;
         }
         else
         {
@@ -33,7 +32,7 @@ public class NumberWizardConsole : MonoBehaviour
     {
         if (guess == max)
         {
-            guessText.text = ("Error!");
+            return;
         }
         else
         {
